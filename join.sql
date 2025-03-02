@@ -18,3 +18,7 @@ SELECT * FROM post;
 
 INSERT INTO post (id, title, user_id) VALUES
 (6, 'this is a post title', NULL);
+
+-- full join
+SELECT * FROM post as p 
+FULL JOIN "user" as u ON p.user_id = u.id
