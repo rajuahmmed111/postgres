@@ -14,6 +14,7 @@ INSERT INTO employee VALUES (1, 'John Doe', 101);
 
 INSERT INTO employee VALUES (1, 'Jane Smith', 102)
 
+-- inserted department data
 INSERT INTO department VALUES (101, 'Human Resource');
 
 INSERT INTO department VALUES (102, 'Marketing');
