@@ -20,6 +20,7 @@ INSERT INTO department VALUES (102, 'Marketing');
 
 SELECT * FROM employee;
 
+-- show department
 SELECT * FROM department;
 
 -- cross join
