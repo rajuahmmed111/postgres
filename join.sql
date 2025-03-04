@@ -14,6 +14,7 @@ SELECT * FROM "post" as p LEFT JOIN "user" as u ON p.user_id = u.id; -- provide 
 
 SELECT * FROM "post" as p RIGHT JOIN "user" as u ON p.user_id = u.id; -- provide context(post.id)
 
+-- show post result
 SELECT * FROM post;
 
 INSERT INTO post (id, title, user_id) VALUES
