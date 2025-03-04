@@ -1,4 +1,6 @@
 -- Active: 1740560784691@@127.0.0.1@5432@ph@public
+
+-- create table employees
 CREATE TABLE employee (
     emp_id INT,
     emp_name VARCHAR(50),
@@ -6,7 +8,7 @@ CREATE TABLE employee (
 )
 
 
--- create table employee
+-- create table department
 create TABLE department (
     dept_id INT,
     dept_name VARCHAR(50)
