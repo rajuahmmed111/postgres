@@ -10,6 +10,7 @@ create TABLE department (
     dept_name VARCHAR(50)
 );
 
+-- inserted employee data 
 INSERT INTO employee VALUES (1, 'John Doe', 101);
 
 INSERT INTO employee VALUES (1, 'Jane Smith', 102)
