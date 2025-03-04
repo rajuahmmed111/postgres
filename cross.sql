@@ -5,6 +5,8 @@ CREATE TABLE employee (
     dept_id INT
 )
 
+
+-- create table employee
 create TABLE department (
     dept_id INT,
     dept_name VARCHAR(50)
