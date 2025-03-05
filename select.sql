@@ -451,7 +451,6 @@ SELECT * FROM students WHERE email != NULL;
 
 SELECT * FROM students WHERE email IS NOT NULL;
 
-SELECT * FROM students
 
 -- Coalesce
 SELECT COALESCE(email, 'email not provide') FROM students;
