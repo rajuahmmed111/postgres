@@ -16,6 +16,7 @@ create TABLE department (
 -- inserted employee data
 INSERT INTO employee VALUES (1, 'John Doe', 101);
 
+-- insert employee values
 INSERT INTO employee VALUES (1, 'Jane Smith', 102)
 
 -- inserted department data
