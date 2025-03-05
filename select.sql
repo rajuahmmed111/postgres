@@ -437,6 +437,7 @@ SELECT
     min(age) AS minimum_age
 FROM students;
 
+-- use average
 SELECT max(length(first_name)) as name FROM students
 
 -- NOT
