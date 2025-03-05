@@ -480,6 +480,7 @@ SELECT * FROM students WHERE first_name LIKE '___a%';
 SELECT * FROM students WHERE first_name ILIKE 'a%';
 -- case insensitive
 
+-- limit and offset
 SELECT * FROM students LIMIT 5 OFFSET 5 * 0;
 
 SELECT * FROM students LIMIT 5 OFFSET 5 * 1;
