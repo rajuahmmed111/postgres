@@ -474,7 +474,7 @@ WHERE
 -- between operators
 SELECT * FROM students WHERE age BETWEEN 19 AND 22 ORDER BY age
 
--- Like operator
+-- Like operators
 SELECT * FROM students WHERE first_name LIKE '___a%';
 -- case sensitive
 SELECT * FROM students WHERE first_name ILIKE 'a%';
