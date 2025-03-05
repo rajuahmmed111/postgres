@@ -443,7 +443,6 @@ SELECT max(length(first_name)) as name FROM students
 -- NOT
 SELECT * FROM students WHERE country <> 'USA';
 
---
 SELECT * FROM students WHERE NOT country = 'USA';
 
 SELECT NULL = 0;
