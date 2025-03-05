@@ -7,14 +7,13 @@ CREATE TABLE employee (
     dept_id INT
 )
 
-
 -- create table department
 create TABLE department (
     dept_id INT,
     dept_name VARCHAR(50)
 );
 
--- inserted employee data 
+-- inserted employee data
 INSERT INTO employee VALUES (1, 'John Doe', 101);
 
 INSERT INTO employee VALUES (1, 'Jane Smith', 102)
@@ -32,4 +31,4 @@ SELECT * FROM department;
 -- cross join
 SELECT e.emp_name, d.dept_name
 FROM employee e
-CROSS JOIN department d;
+    CROSS JOIN department d;
