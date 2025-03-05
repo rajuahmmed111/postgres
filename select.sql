@@ -471,7 +471,7 @@ FROM students
 WHERE
     country NOT IN ('USA', 'UK', 'Canada')
 
--- between operator
+-- between operators
 SELECT * FROM students WHERE age BETWEEN 19 AND 22 ORDER BY age
 
 -- Like operator
