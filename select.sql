@@ -451,6 +451,11 @@ SELECT * FROM students WHERE email != NULL;
 
 SELECT * FROM students WHERE email IS NOT NULL;
 
+-- AND
+SELECT * FROM students WHERE country = 'USA' AND age > 20;
+
+-- OR
+SELECT * FROM students
 
 -- Coalesce
 SELECT COALESCE(email, 'email not provide') FROM students;
