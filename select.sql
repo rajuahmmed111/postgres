@@ -485,7 +485,7 @@ SELECT * FROM students LIMIT 5 OFFSET 5 * 0;
 
 SELECT * FROM students LIMIT 5 OFFSET 5 * 1;
 
--- delete
+-- delete data from tables
 DELETE FROM students WHERE s_id = 11;
 
 -- update
