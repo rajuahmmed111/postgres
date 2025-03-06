@@ -162,3 +162,6 @@ VALUES (
 SELECT * FROM employees;
 
 SELECT * FROM departments;
+
+-- inner join
+SELECT * FROM employees as e JOIN departments as d ON e.d_id = d.d_id;
