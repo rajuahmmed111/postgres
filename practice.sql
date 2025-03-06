@@ -3,7 +3,7 @@
 -- create employee table
 CREATE TABLE employees (
     e_id SERIAL PRIMARY KEY,
-    e_name VARCHAR(255),
+    e_name VARCHAR(50),
     d_id INT REFERENCES department (d_id),
     salary DECIMAL(10, 2),
     hire_date DATE
@@ -12,5 +12,5 @@ CREATE TABLE employees (
 -- create department table
 CREATE TABLE department (
     d_id SERIAL PRIMARY KEY,
-    d_name VARCHAR(255),
+    d_name VARCHAR(50),
 )
