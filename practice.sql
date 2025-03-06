@@ -165,3 +165,4 @@ SELECT * FROM departments;
 
 -- inner join
 SELECT * FROM employees as e JOIN departments as d ON e.d_id = d.d_id;
+SELECT * FROM employees as e JOIN departments as d USING(d_id);
