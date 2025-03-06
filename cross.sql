@@ -30,6 +30,8 @@ SELECT * FROM employee;
 SELECT * FROM department;
 
 -- cross join
-SELECT e.emp_name, d.dept_name
-FROM employee e
-    CROSS JOIN department d;
+SELECT * FROM employee e CROSS JOIN department d;
+
+
+-- natural join
+SELECT * FROM employee d NATURAL JOIN department;
