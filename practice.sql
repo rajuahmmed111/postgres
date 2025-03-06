@@ -33,7 +33,6 @@ VALUES ('HR'),
 -- insert employee 30 data
 INSERT INTO employees (e_name, d_id, salary, hire_date )
 VALUES 
-
     ('John Doe', 1, 60000.00, '2010-01-01'),
     ('Jane Smith', 2, 55000.00, '2009-05-15'),
     ('Mike Johnson', 3, 65000.00, '2011-07-10'),
