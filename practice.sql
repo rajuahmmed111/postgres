@@ -169,4 +169,4 @@ SELECT * FROM employees as e JOIN departments as d USING(d_id);
 
 
 -- show departments name with average salary
-SELECT * FROM employees;
+SELECT d_name ,round(avg(salary)) FROM employees JOIN departments USING(d_id) GROUP BY d_name;
