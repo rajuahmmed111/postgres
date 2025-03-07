@@ -227,5 +227,4 @@ VALUES (1, '2022-05-15', 15000.00),
     (3, '2022-12-20', 28000.00);
 
 
-
 -- find customers who has placed more than 2 orders and calculated the total amount sent by each of these customers
