@@ -196,3 +196,6 @@ GROUP BY
     d_name
     ORDER BY avg_salary DESC
     LIMIT 1;
+
+
+-- count employees hired each year
