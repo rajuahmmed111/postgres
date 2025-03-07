@@ -194,9 +194,34 @@ FROM employees
     JOIN departments USING (d_id)
 GROUP BY
     d_name
-    ORDER BY avg_salary DESC
-    LIMIT 1;
-
+ORDER BY avg_salary DESC
+LIMIT 1;
 
 -- count employees hired each year
-SELECT extract(YEAR FROM hire_date) as hire_year, count(*) FROM employees GROUP BY hire_year
+SELECT extract(
+        YEAR
+        FROM hire_date
+    ) as hire_year, count(*)
+FROM employees
+GROUP BY
+    hire_year;
+
+-- create orders table
+CREATE TABLE orders (
+    o_id SERIAL PRIMARY KEY,
+    c_id INT,
+    o_date DATE,
+    total_amount DECIMAL(10, 2)
+);
+
+-- inserted data in orders table
+INSERT INTO
+    orders
+VALUES (1, '2022-05-15', 15000.00),
+    (2, '2022-06-10', 20000.00),
+    (3, '2022-07-15', 18000.00),
+    (3, '2022-08-20', 25000.00),
+    (1, '2022-09-15', 12000.00),
+    (2, '2022-10-20', 19000.00),
+    (1, '2022-11-15', 22000.00),
+    (3, '2022-12-20', 28000.00);
