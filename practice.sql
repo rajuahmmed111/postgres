@@ -164,9 +164,22 @@ SELECT * FROM employees;
 SELECT * FROM departments;
 
 -- inner join
-SELECT * FROM employees as e JOIN departments as d ON e.d_id = d.d_id;
-SELECT * FROM employees as e JOIN departments as d USING(d_id);
+SELECT *
+FROM employees as e
+    JOIN departments as d ON e.d_id = d.d_id;
 
+SELECT * FROM employees as e JOIN departments as d USING (d_id);
 
 -- show departments name with average salary
-SELECT d_name ,round(avg(salary)) FROM employees JOIN departments USING(d_id) GROUP BY d_name;
+SELECT d_name, round(avg(salary))
+FROM employees
+    JOIN departments USING (d_id)
+GROUP BY
+    d_name;
+
+SELECT * FROM employees;
+
+SELECT * FROM departments;
+
+-- count employees each department
+SELECT d_name,count(*) FROM employees JOIN departments USING (d_id) GROUP BY d_name
