@@ -182,7 +182,17 @@ SELECT * FROM employees;
 SELECT * FROM departments;
 
 -- count employees each department
-SELECT d_name,count(*) FROM employees JOIN departments USING (d_id) GROUP BY d_name
+SELECT d_name, count(*)
+FROM employees
+    JOIN departments USING (d_id)
+GROUP BY
+    d_name
 
 -- find the department name the highest average salary
-SELECT d_name, round(avg(salary)) FROM employees JOIN departments USING (d_id) GROUP BY d_name
+SELECT d_name, round(avg(salary)) as avg_salary
+FROM employees
+    JOIN departments USING (d_id)
+GROUP BY
+    d_name
+    ORDER BY avg_salary DESC
+    LIMIT 1;
