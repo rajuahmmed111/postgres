@@ -199,3 +199,4 @@ GROUP BY
 
 
 -- count employees hired each year
+SELECT extract(YEAR FROM hire_date) as hire_year, count(*) FROM employees GROUP BY hire_year
