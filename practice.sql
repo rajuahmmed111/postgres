@@ -216,7 +216,7 @@ CREATE TABLE orders (
 
 -- inserted data in orders table
 INSERT INTO
-    orders
+    orders (c_id, o_date, total_amount)
 VALUES (1, '2022-05-15', 15000.00),
     (2, '2022-06-10', 20000.00),
     (3, '2022-07-15', 18000.00),
