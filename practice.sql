@@ -228,4 +228,3 @@ VALUES (1, '2022-05-15', 15000.00),
 
 
 -- find customers who has placed more than 2 orders and calculated the total amount spent by each of these customers
-SELECT c_id, count(o_id) FROM orders GROUP BY c_id HAVING count(o_id) > 2;
