@@ -229,3 +229,7 @@ VALUES (1, '2022-05-15', 15000.00),
 
 -- find customers who has placed more than 2 orders and calculated the total amount spent by each of these customers
 SELECT c_id, count(o_id), round(sum(total_amount)) as total_spent FROM orders GROUP BY c_id;
+
+
+--find total amount of orders placed each month in the year 2022
+SELECT extract(MONTH FROM o_date) as order_month, sum(total_amount) FROM orders WHERE extract( YEAR FROM o_date) = 2022 GROUP BY order_month;
