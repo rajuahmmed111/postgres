@@ -56,4 +56,8 @@ SELECT * FROM employees1 WHERE salary > (SELECT max(salary) FROM employees1 WHER
 -- return can multiple rows
 -- return can single column
 
-SELECT *, (SELECT sum(salary) FROM employees1) FROM employees1
+SELECT *, (SELECT sum(salary) FROM employees1) FROM employees1;
+
+-- SELECT department_name, count(employee_id), sum(salary) FROM employees1 GROUP BY department_name;
+-- same query in use sub query
+SELECT * FROM (SELECT department_name, count(employee_id), sum(salary) FROM employees1 GROUP BY department_name)
