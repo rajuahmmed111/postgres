@@ -52,3 +52,6 @@ SELECT * FROM employees1;
 -- SELECT * FROM employees1 WHERE salary > 64000;
 SELECT * FROM employees1 WHERE salary > (SELECT max(salary) FROM employees1 WHERE department_name = 'HR');
 
+-- return can single value
+-- return can multiple rows
+-- return can single column
