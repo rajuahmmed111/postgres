@@ -46,5 +46,6 @@ VALUES
 ('Emma Carter', 'Sales', 72000.00, '2019-08-30');
 
 
-
 SELECT * FROM employees1;
+
+-- Retrieve all employees whose salary is greater than hight salary of the HR department
