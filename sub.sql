@@ -49,3 +49,4 @@ VALUES
 SELECT * FROM employees1;
 
 -- Retrieve all employees whose salary is greater than hight salary of the HR department
+SELECT * FROM employees1 WHERE salary > 64000;
