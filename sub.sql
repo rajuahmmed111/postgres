@@ -241,3 +241,4 @@ WHERE
         WHERE department_name
             LIKE '%R%'
     );
+
