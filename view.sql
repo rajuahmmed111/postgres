@@ -25,3 +25,7 @@ WHERE
 
 
 SELECT * FROM test_view;
+
+-- simplified complex query
+-- improved security
+-- enhanced data abstraction
