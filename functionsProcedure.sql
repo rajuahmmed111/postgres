@@ -10,4 +10,14 @@ $$
 SELECT count(*) FROM employees1;
 $$;
 
-SELECT emp_count()
+SELECT emp_count ();
+
+CREATE Function emp_delete()
+RETURNS void
+LANGUAGE SQL
+AS
+$$
+DELETE FROM employees1 WHERE employee_id =30;
+$$;
+
+SELECT emp_delete ();
