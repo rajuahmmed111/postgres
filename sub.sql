@@ -55,3 +55,5 @@ SELECT * FROM employees1 WHERE salary > (SELECT max(salary) FROM employees1 WHER
 -- return can single value
 -- return can multiple rows
 -- return can single column
+
+SELECT *, (SELECT sum(salary) FROM employees1) FROM employees1
