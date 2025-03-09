@@ -32,3 +32,5 @@ DELETE FROM employees1 WHERE employee_id = p_emp_id;
 $$;
 
 SELECT delete_emp_id (29);
+
+DROP Table employee;
