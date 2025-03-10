@@ -63,5 +63,32 @@ $$;
 CALL remove_emp_var ();
 
 
+--create procedure with parameters
+CREATE Procedure remove_emp_var(p_emp_id INT)
+LANGUAGE PLPGSQL
+AS $$
+declare
+test_var int;
+
+BEGIN 
+select employee_id INTO test_var from employees1 WHERE employee_id=p_emp_id;
+DELETE FROM employees1 where employee_id = test_var;
+end
+$$;
+
+call remove_emp_var(25);
+
+
+-- CREATE PROCEDURE remove_emp_var_p (p_emp_id INT)
+-- LANGUAGE plpgsql 
+-- AS 
+-- $$ 
+--     declare test_var INT;
+--     BEGIN
+--         SELECT employee_id INTO test_var FROM employees1 WHERE employee_id = p_emp_id;
+--         DELETE from employees1 WHERE employee_id = test_var;
+--         RAISE NOTICE 'Employee deleted successfully!'
+--     END
+-- $$;
 
 SELECT * FROM employees1;
