@@ -79,16 +79,19 @@ $$;
 call remove_emp_var(25);
 
 
--- CREATE PROCEDURE remove_emp_var_p (p_emp_id INT)
--- LANGUAGE plpgsql 
--- AS 
--- $$ 
---     declare test_var INT;
---     BEGIN
---         SELECT employee_id INTO test_var FROM employees1 WHERE employee_id = p_emp_id;
---         DELETE from employees1 WHERE employee_id = test_var;
---         RAISE NOTICE 'Employee deleted successfully!'
---     END
--- $$;
+CREATE PROCEDURE remove_emp_var_p (p_emp_id INT)
+LANGUAGE plpgsql 
+AS 
+$$ 
+    declare test_var INT;
+    BEGIN
+        SELECT employee_id INTO test_var FROM employees1 WHERE employee_id = p_emp_id;
+        DELETE from employees1 WHERE employee_id = test_var;
+
+        RAISE NOTICE 'Employee deleted successfully!';
+    END
+$$;
+
+CALL remove_emp_var_p(26);
 
 SELECT * FROM employees1;
