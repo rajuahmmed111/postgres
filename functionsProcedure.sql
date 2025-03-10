@@ -36,7 +36,6 @@ SELECT delete_emp_id (29);
 DROP Table employee;
 
 CREATE Procedure test_procedure
-    
 AS 
 $$
     SELECT * FROM employees1 LIMIT 5;
