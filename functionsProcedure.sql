@@ -42,4 +42,5 @@ $$
     SELECT * FROM employees1 LIMIT 5;
 $$;
 
+
 CALL test_procedure ();
