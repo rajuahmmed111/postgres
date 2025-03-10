@@ -43,6 +43,7 @@ $$
 BEGIN
 INSERT into delete_users_audit VALUES(OLD.user_name, now());
 RAISE NOTICE 'Deleted audit user log created';
+RETURNS OLD;
 END
 $$
 
