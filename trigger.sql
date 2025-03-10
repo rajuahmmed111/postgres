@@ -35,7 +35,7 @@ CREATE Table delete_users_audit (
 SELECT * FROM delete_users_audit;
 
 -- trigger function
-CREATE FUNCTION save_deleted_users()
+CREATE or REPLACE FUNCTION save_deleted_users()
 RETURNS TRIGGER
 LANGUAGE PLPGSQL
 AS
@@ -43,15 +43,23 @@ $$
 BEGIN
 INSERT into delete_users_audit VALUES(OLD.user_name, now());
 RAISE NOTICE 'Deleted audit user log created';
-RETURNS OLD;
+RETURN OLD;
 END
 $$
 
 
 -- create trigger
-
 CREATE Trigger save_deleted_users_trigger
 BEFORE DELETE
 ON my_users 
 for EACH row
 EXECUTE FUNCTION save_deleted_users();
+
+
+-- now i want to delete data from my_users table
+
+DELETE FROM my_users WHERE user_name = 'John Doe';
+
+SELECT * FROM my_users;
+
+SELECT * FROM delete_users_audit;
