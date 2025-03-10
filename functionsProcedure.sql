@@ -35,6 +35,7 @@ SELECT delete_emp_id (29);
 
 DROP Table employee;
 
+-- procedure
 CREATE Procedure remove_emp()
 LANGUAGE plpgsql
 AS 
@@ -45,5 +46,22 @@ $$
 $$;
 
 CALL remove_emp ();
+
+-- procedure with use variables
+CREATE Procedure remove_emp_var()
+LANGUAGE PLPGSQL
+AS $$
+declare
+test_var int;
+
+BEGIN 
+select employee_id INTO test_var from employees1 WHERE employee_id=27;
+DELETE FROM employees1 where employee_id = test_var;
+end
+$$;
+
+CALL remove_emp_var ();
+
+
 
 SELECT * FROM employees1;
