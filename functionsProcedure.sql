@@ -35,11 +35,15 @@ SELECT delete_emp_id (29);
 
 DROP Table employee;
 
-CREATE Procedure test_procedure
+CREATE Procedure remove_emp()
+LANGUAGE plpgsql
 AS 
 $$
-    SELECT * FROM employees1 LIMIT 5;
+    BEGIN
+    DELETE FROM employees1 WHERE employee_id = 28;
+    END
 $$;
 
+CALL remove_emp ();
 
-CALL test_procedure ();
+SELECT * FROM employees1;
