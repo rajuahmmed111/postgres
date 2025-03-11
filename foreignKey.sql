@@ -16,7 +16,6 @@ INSERT INTO "user" (username) VALUES
                     ('sagor'),
                     ('nodi');
 
--- inserted data in post
 INSERT INTO "post" (title, user_id) VALUES
                     ('First Post', 1),
                     ('Second Post', 2),
