@@ -6,6 +6,8 @@
 -- inner join
 SELECT p.id FROM "post" as p INNER JOIN "user" as u ON p.user_id = u.id; --provide context(post.id)
 
+SELECT * FROM post;
+SELECT * FROM "user";
 
 -- LEFT JOIN
 SELECT * FROM "post" as p LEFT JOIN "user" as u ON p.user_id = u.id; -- provide context(post.id)
