@@ -36,7 +36,6 @@ SELECT * FROM test_view;
 
 
 
-
 -------- notes--------
 -- simplified complex query
 -- improved security
