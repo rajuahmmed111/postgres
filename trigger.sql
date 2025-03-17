@@ -65,4 +65,3 @@ SELECT * FROM my_users;
 SELECT * FROM delete_users_audit;
 
 
-
