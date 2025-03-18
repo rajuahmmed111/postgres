@@ -58,6 +58,7 @@ EXECUTE FUNCTION save_deleted_users();
 
 -- now i want to delete data from my_users table
 
+-- delete
 DELETE FROM my_users WHERE user_name = 'John Doe';
 
 -- my_users table
