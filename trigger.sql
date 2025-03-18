@@ -62,4 +62,5 @@ DELETE FROM my_users WHERE user_name = 'John Doe';
 
 SELECT * FROM my_users;
 
+-- delete from my_users table
 SELECT * FROM delete_users_audit;
