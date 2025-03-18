@@ -60,6 +60,7 @@ EXECUTE FUNCTION save_deleted_users();
 
 DELETE FROM my_users WHERE user_name = 'John Doe';
 
+-- my_users table
 SELECT * FROM my_users;
 
 -- delete from my_users table
