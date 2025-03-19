@@ -12,6 +12,7 @@ $$;
 
 SELECT emp_count ();
 
+-- create function
 CREATE Function emp_delete()
 RETURNS void
 LANGUAGE SQL
