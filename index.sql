@@ -6,6 +6,7 @@ FROM employees1
 WHERE
     employee_name = 'John Doe';
 
+-- show employee1 data
 SELECT * FROM employees1;
 
 --create indexing
